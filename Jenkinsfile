@@ -12,7 +12,7 @@ pipeline {
 
 	stages {
 		stage("test: baseline (jdk8)") {
-			agent any {
+			agent {
 				docker {
 					image 'adoptopenjdk/openjdk8:latest'
 					args '-v $HOME/.m2:/tmp/jenkins-home/.m2'
