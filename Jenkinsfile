@@ -21,9 +21,7 @@ pipeline {
 			steps {
 				sh 'test/run.sh'
 			}
-		}
-
-	}
+}
 
 	post {
 		changed {
