@@ -9,9 +9,6 @@ pipeline {
 		disableConcurrentBuilds()
 		buildDiscarder(logRotator(numToKeepStr: '14'))
 	}
-
-	stages {
-			steps {
 				sh 'test/run.sh'
 			}
 }
