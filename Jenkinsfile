@@ -11,9 +11,7 @@ pipeline {
 	}
 				sh 'test/run.sh'
 			}
-}
-
-	post {
+post {
 		changed {
 			script {
 				slackSend(
